@@ -1,4 +1,4 @@
-const fs = require('path')
+const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 const { request } = require('http')
