@@ -61,6 +61,13 @@ app.get('/help', (req, res) => {
     })
 })
 
+app.get('/slides', (req, res) => {
+    res.render('slides', {
+        title: 'Slides Page',
+        name: 'Igor Garcia'
+    })
+})
+
 app.get('*', (req, res) => {
     res.render('404', {
         title: 404,

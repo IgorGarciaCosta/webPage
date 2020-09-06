@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slides Page</title>
+    <link rel="icon" href="/img/earth.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Here we have some planets photos.</p>
+    </div>
+    <div class="secondary-content">
+
+        <div class="grid-container">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <img class="mySlides" src="/img/earth.jpg">
+            <img class="mySlides" src="/img/jupiter.jpg">
+            <img class="mySlides" src="/img/saturn.jpg">
+            <img class="mySlides" src="/img/mars.jpg">
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+
+
+</html>
